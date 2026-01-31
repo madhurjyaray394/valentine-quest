@@ -114,9 +114,9 @@ const App = () => {
           <p style={{ marginBottom: '20px', fontSize: '1rem', color: '#ff69b4' }}>This is for you 😚</p>
           <Character emotion="happy" />
           <h1 style={{ fontSize: '1.8rem', marginTop: '10px', color: '#ff1493' }}>
-            🎉 YAY! Love you Forever Munu!I'm so happy!
+            🎉 YAY! Love you Forever! I'm so happy!
           </h1>
-          <p style={{ marginTop: '20px', fontSize: '1.2rem' }}>joldi log pam! 💖</p>
+          <p style={{ marginTop: '20px', fontSize: '1.2rem' }}>see you soon! 💖</p>
 
           {/* Confetti / Petals can be added here loosely with CSS particles if needed */}
         </div>
