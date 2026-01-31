@@ -1,0 +1,40 @@
+:root {
+  --bg-color: #ffe4e1; /* Misty Rose */
+  --text-color: #5d4037; /* Brown */
+  --primary-color: #ff69b4; /* Hot Pink */
+  --secondary-color: #ffb6c1; /* Light Pink */
+  --accent-color: #ff1493; /* Deep Pink */
+  --pixel-font: 'Press Start 2P', cursive;
+  --ui-bg: #fff0f5; /* Lavender Blush */
+  --shadow-color: #ccaabb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--pixel-font);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+  image-rendering: pixelated;
+  user-select: none;
+}
+
+button {
+  font-family: var(--pixel-font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
