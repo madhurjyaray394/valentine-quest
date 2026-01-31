@@ -54,6 +54,25 @@ const App = () => {
       position: 'relative'
     }}>
 
+      {/* Animated Watermark */}
+      <div style={{
+        position: 'fixed',
+        top: '20px',
+        right: '20px',
+        fontSize: '0.9rem',
+        fontFamily: 'inherit',
+        color: 'rgba(0, 0, 0, 0.3)',
+        fontWeight: '600',
+        letterSpacing: '1px',
+        zIndex: 1000,
+        animation: 'watermarkFadeIn 2s ease-in-out, watermarkFloat 3s ease-in-out infinite',
+        textShadow: '1px 1px 2px rgba(255, 255, 255, 0.5)',
+        pointerEvents: 'none',
+        userSelect: 'none'
+      }}>
+        built by madhu ❤️
+      </div>
+
       {step < 3 && <Character emotion={characterEmotion} />}
 
       {step === 0 && (
@@ -125,6 +144,14 @@ const App = () => {
       <style>{`
         @keyframes fadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
         @keyframes popIn { 0% { transform: scale(0); } 80% { transform: scale(1.1); } 100% { transform: scale(1); } }
+        @keyframes watermarkFadeIn { 
+          from { opacity: 0; transform: translateY(-10px); } 
+          to { opacity: 1; transform: translateY(0); } 
+        }
+        @keyframes watermarkFloat { 
+          0%, 100% { transform: translateY(0px); } 
+          50% { transform: translateY(-5px); } 
+        }
         /* No button might need higher z-index if fixed */
       `}</style>
     </div>
